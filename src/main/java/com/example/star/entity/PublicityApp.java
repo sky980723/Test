@@ -1,5 +1,7 @@
 package com.example.star.entity;
 
+import java.util.Date;
+
 public class PublicityApp {
 
 	private String id;
@@ -15,6 +17,26 @@ public class PublicityApp {
 	private String videoUrl;// 视频的地址
 
 	private String videoDescribe;// 视频的文字说明
+
+	private Date addtime;
+
+	private Date updatetime;
+
+	public Date getAddtime() {
+		return addtime;
+	}
+
+	public void setAddtime(Date addtime) {
+		this.addtime = addtime;
+	}
+
+	public Date getUpdatetime() {
+		return updatetime;
+	}
+
+	public void setUpdatetime(Date updatetime) {
+		this.updatetime = updatetime;
+	}
 
 	public String getId() {
 		return id;
