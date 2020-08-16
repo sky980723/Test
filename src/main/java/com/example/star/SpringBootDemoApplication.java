@@ -1,5 +1,7 @@
 package com.example.star;
 
+import java.io.IOException;
+
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -12,10 +14,10 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @EnableScheduling
 @EnableSwagger2
 @EnableTransactionManagement
-@MapperScan("com.example.star.dao")
+@MapperScan(value = "com.example.star.dao")
 public class SpringBootDemoApplication {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		SpringApplication.run(SpringBootDemoApplication.class, args);
 	}
 
